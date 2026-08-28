@@ -1,0 +1,762 @@
+/* =========================================================
+   EXPENSE PAGE
+========================================================= */
+
+.expense-page {
+  min-height: 100vh;
+
+  padding: 45px 20px 70px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(220, 38, 38, 0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(245, 158, 11, 0.08),
+      transparent 30%
+    ),
+    #fffaf8;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.expense-container {
+  width: 100%;
+
+  max-width: 620px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.expense-header {
+  margin-bottom: 25px;
+}
+
+
+.expense-back-link {
+  padding: 0;
+
+  margin-bottom: 25px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #7f1d1d;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+
+.expense-back-link:hover {
+  color: #450a0a;
+}
+
+
+.expense-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.expense-title-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #991b1b;
+
+  color: white;
+
+  border-radius: 15px;
+
+  font-size: 23px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(153, 27, 27, 0.2);
+}
+
+
+.expense-title h1 {
+  margin: 0 0 4px;
+
+  color: #4a1616;
+
+  font-size: 29px;
+
+  letter-spacing: -0.5px;
+}
+
+
+.expense-title p {
+  margin: 0;
+
+  color: #927070;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   VINAYAKA HEADER
+========================================================= */
+
+.expense-vinayaka-header {
+  margin: 25px 0;
+
+  padding: 18px;
+
+  text-align: center;
+
+  background: rgba(255, 242, 228, 0.85);
+
+  border: 1px solid #efd5bd;
+
+  border-radius: 16px;
+
+  color: #8b4513;
+
+  font-weight: 600;
+}
+
+
+.expense-vinayaka-header div {
+  margin-bottom: 4px;
+
+  color: #b45309;
+
+  font-size: 30px;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.expense-form {
+  padding: 38px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid #eadede;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 45px rgba(91, 45, 20, 0.07);
+}
+
+
+.expense-input-group {
+  margin-bottom: 23px;
+}
+
+
+.expense-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #573737;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.optional {
+  margin-left: 7px;
+
+  color: #9ca3af;
+
+  font-size: 11px;
+
+  font-weight: 400;
+}
+
+
+.expense-form input,
+.expense-form textarea {
+  width: 100%;
+
+  border: 1px solid #ded2d2;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  background: #fffafa;
+
+  color: #3d2828;
+
+  font-size: 15px;
+
+  transition: 0.2s ease;
+
+  box-sizing: border-box;
+}
+
+
+.expense-form input {
+  height: 50px;
+
+  padding: 0 15px;
+}
+
+
+.expense-form textarea {
+  padding: 13px 15px;
+
+  resize: vertical;
+
+  min-height: 105px;
+
+  line-height: 1.5;
+}
+
+
+.expense-form input:hover,
+.expense-form textarea:hover {
+  border-color: #cbbbbb;
+}
+
+
+.expense-form input:focus,
+.expense-form textarea:focus {
+  background: white;
+
+  border-color: #991b1b;
+
+  box-shadow:
+    0 0 0 3px rgba(153, 27, 27, 0.08);
+}
+
+
+.expense-form input::placeholder,
+.expense-form textarea::placeholder {
+  color: #b5a3a3;
+}
+
+
+/* =========================================================
+   AMOUNT
+========================================================= */
+
+.expense-amount-input {
+  position: relative;
+}
+
+
+.expense-amount-input span {
+  position: absolute;
+
+  left: 15px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #8b5e5e;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  z-index: 1;
+}
+
+
+.expense-amount-input input {
+  padding-left: 38px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.expense-error {
+  padding: 12px 14px;
+
+  margin-bottom: 16px;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+  border-radius: 9px;
+
+  color: #be123c;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.expense-submit {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #991b1b;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(153, 27, 27, 0.18);
+
+  transition: 0.2s ease;
+}
+
+
+.expense-submit:hover:not(:disabled) {
+  background: #7f1d1d;
+
+  transform: translateY(-1px);
+}
+
+
+.expense-submit:disabled {
+  background: #b8a3a3;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   RECEIPT
+========================================================= */
+
+.expense-receipt-container {
+  width: 100%;
+
+  max-width: 560px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.expense-success-icon {
+  width: 62px;
+  height: 62px;
+
+  margin: 15px auto 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+
+  border-radius: 50%;
+
+  color: #059669;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+
+.expense-receipt-container > h1 {
+  margin: 0;
+
+  color: #4a1616;
+
+  font-size: 28px;
+}
+
+
+.expense-success-text {
+  margin: 8px 0 30px;
+
+  color: #927070;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   RECEIPT CARD
+========================================================= */
+
+.expense-receipt {
+  padding: 32px;
+
+  background: #fffdf9;
+
+  border: 1px solid #ead8bd;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 15px 45px rgba(91, 45, 20, 0.08);
+
+  text-align: left;
+
+  overflow: hidden;
+}
+
+
+.expense-vinayaka {
+  text-align: center;
+
+  color: #b45309;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  margin-bottom: 2px;
+}
+
+
+.expense-hindi {
+  text-align: center;
+
+  color: #8b4513;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+
+.expense-receipt-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.expense-logo {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #991b1b;
+
+  color: white;
+
+  border-radius: 11px;
+
+  font-size: 19px;
+
+  font-weight: 700;
+}
+
+
+.expense-receipt-header h2 {
+  margin: 0;
+
+  color: #4a1616;
+
+  font-size: 21px;
+}
+
+
+.expense-receipt-header p {
+  margin: 3px 0 0;
+
+  color: #927070;
+
+  font-size: 13px;
+}
+
+
+.expense-divider {
+  height: 1px;
+
+  margin: 22px 0;
+
+  background: #ead8bd;
+}
+
+
+/* =========================================================
+   RECEIPT ROW
+========================================================= */
+
+.expense-row {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+}
+
+
+.expense-row span {
+  color: #927070;
+
+  font-size: 14px;
+}
+
+
+.expense-row strong {
+  color: #4a1616;
+
+  font-size: 14px;
+
+  text-align: right;
+}
+
+
+.expense-amount {
+  color: #b91c1c !important;
+
+  font-size: 19px !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.expense-description {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  background: #fff7ed;
+
+  border: 1px solid #fed7aa;
+
+  border-radius: 10px;
+}
+
+
+.expense-description span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9a3412;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+.expense-description p {
+  margin: 0;
+
+  color: #7c2d12;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+.expense-thank-you {
+  color: #765a3e;
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+
+.expense-hindi-bottom {
+  margin-top: 10px;
+
+  color: #a15c15;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.expense-actions {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+
+.expense-share-btn,
+.expense-pdf-btn,
+.expense-new-btn,
+.expense-back-btn {
+  width: 100%;
+
+  height: 47px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.expense-share-btn {
+  border: none;
+
+  background: #166534;
+
+  color: white;
+}
+
+
+.expense-share-btn:hover {
+  background: #14532d;
+
+  transform: translateY(-1px);
+}
+
+
+.expense-pdf-btn {
+  border: 1px solid #ded2d2;
+
+  background: white;
+
+  color: #7f1d1d;
+}
+
+
+.expense-pdf-btn:hover {
+  background: #fff5f5;
+}
+
+
+.expense-new-btn {
+  border: 1px solid #ded2d2;
+
+  background: #fffdf9;
+
+  color: #573737;
+}
+
+
+.expense-new-btn:hover {
+  background: #fff5f5;
+}
+
+
+.expense-back-btn {
+  border: none;
+
+  background: transparent;
+
+  color: #927070;
+}
+
+
+.expense-back-btn:hover {
+  color: #4a1616;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .expense-page {
+    padding: 30px 15px 50px;
+  }
+
+
+  .expense-form {
+    padding: 25px 20px;
+  }
+
+
+  .expense-title h1 {
+    font-size: 24px;
+  }
+
+
+  .expense-receipt {
+    padding: 25px 20px;
+  }
+
+
+  .expense-row {
+    align-items: flex-start;
+  }
+
+
+  .expense-row strong {
+    max-width: 55%;
+  }
+
+}

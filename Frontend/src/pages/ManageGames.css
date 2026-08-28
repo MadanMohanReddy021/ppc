@@ -1,0 +1,1023 @@
+.manage-games-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(180, 83, 9, 0.07),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(153, 27, 27, 0.06),
+      transparent 30%
+    ),
+    #faf8f7;
+
+  color: #3d2929;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.manage-games-header {
+  min-height: 76px;
+
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+
+  background:
+    rgba(255, 255, 255, 0.95);
+
+  border-bottom:
+    1px solid #e8dedb;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 30;
+
+  backdrop-filter: blur(12px);
+}
+
+
+.manage-games-back {
+  border: none;
+
+  background: transparent;
+
+  color: #7f1d1d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.manage-games-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex: 1;
+}
+
+
+.manage-games-logo {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #111827;
+
+  color: white;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+}
+
+
+.manage-games-title h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 21px;
+}
+
+
+.manage-games-title p {
+  margin: 3px 0 0;
+
+  color: #927070;
+
+  font-size: 12px;
+}
+
+
+.games-role-badge {
+  padding: 7px 12px;
+
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+  border-radius: 20px;
+
+  color: #9f1239;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.manage-games-main {
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding:
+    40px 20px
+    70px;
+
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.games-message {
+  padding: 13px 16px;
+
+  margin-bottom: 18px;
+
+  border-radius: 9px;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+
+.games-message.success {
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+
+  color: #047857;
+}
+
+
+.games-message.error {
+  background: #fff1f2;
+
+  border: 1px solid #fecdd3;
+
+  color: #be123c;
+}
+
+
+/* =====================================================
+   GAME FORM
+===================================================== */
+
+.game-form-card {
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid #e8dedb;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(80, 40, 20, 0.05);
+
+  margin-bottom: 35px;
+}
+
+
+.game-form-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 25px;
+}
+
+
+.game-form-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fff3e5;
+
+  border-radius: 11px;
+
+  color: #b45309;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+.game-form-heading h2 {
+  margin: 0 0 3px;
+
+  color: #4a1616;
+
+  font-size: 19px;
+}
+
+
+.game-form-heading p {
+  margin: 0;
+
+  color: #927070;
+
+  font-size: 12px;
+}
+
+
+.manage-game-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 19px;
+}
+
+
+.game-form-columns {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 17px;
+}
+
+
+.manage-game-input label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #573737;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.manage-game-input label span {
+  margin-left: 6px;
+
+  color: #aaa0a0;
+
+  font-size: 10px;
+
+  font-weight: 400;
+}
+
+
+.manage-game-input input,
+.manage-game-input textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ded2d2;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: #fffafa;
+
+  color: #3d2828;
+
+  font-size: 14px;
+}
+
+
+.manage-game-input input {
+  height: 46px;
+
+  padding: 0 13px;
+}
+
+
+.manage-game-input textarea {
+  padding: 12px 13px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+
+.manage-game-input input:focus,
+.manage-game-input textarea:focus {
+  background: white;
+
+  border-color: #991b1b;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(153, 27, 27, 0.07);
+}
+
+
+/* Form buttons */
+
+.game-form-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.save-game-btn {
+  height: 45px;
+
+  padding: 0 22px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #991b1b;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.save-game-btn:hover:not(:disabled) {
+  background: #7f1d1d;
+}
+
+
+.save-game-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+.cancel-game-btn {
+  height: 45px;
+
+  padding: 0 20px;
+
+  border: 1px solid #ded2d2;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #765a5a;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   EXISTING GAMES
+===================================================== */
+
+.existing-games-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+
+.existing-games-heading h2 {
+  margin: 0 0 4px;
+
+  color: #4a1616;
+
+  font-size: 19px;
+}
+
+
+.existing-games-heading p {
+  margin: 0;
+
+  color: #a38f8f;
+
+  font-size: 12px;
+}
+
+
+.refresh-games-btn {
+  padding: 9px 14px;
+
+  border: 1px solid #ded2d2;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #765a5a;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+.games-list-status {
+  padding: 45px;
+
+  background: white;
+
+  border: 1px solid #e8dedb;
+
+  border-radius: 13px;
+
+  color: #927070;
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+
+.manage-games-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* =====================================================
+   GAME CARD
+===================================================== */
+
+.manage-game-card {
+  padding: 20px;
+
+  background: white;
+
+  border: 1px solid #e8dedb;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 7px 25px
+    rgba(80, 40, 20, 0.04);
+}
+
+
+.manage-game-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.manage-game-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fff3e5;
+
+  border: 1px solid #efd3b1;
+
+  border-radius: 12px;
+
+  font-size: 24px;
+}
+
+
+.manage-game-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+.manage-game-info h3 {
+  margin: 0 0 5px;
+
+  color: #4a1616;
+
+  font-size: 17px;
+}
+
+
+.manage-game-info p {
+  margin: 0;
+
+  color: #927070;
+
+  font-size: 12px;
+}
+
+
+.manage-game-info small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #a38f8f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   GAME BUTTONS
+===================================================== */
+
+.manage-game-buttons {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 16px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid #f0e6e2;
+}
+
+
+.edit-game-btn,
+.winner-game-btn,
+.delete-game-btn {
+  padding: 8px 13px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.edit-game-btn {
+  border: 1px solid #dbeafe;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+}
+
+
+.winner-game-btn {
+  border: 1px solid #fed7aa;
+
+  background: #fff7ed;
+
+  color: #c2410c;
+}
+
+
+.delete-game-btn {
+  border: 1px solid #fecaca;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+}
+
+
+.edit-game-btn:hover {
+  background: #dbeafe;
+}
+
+
+.winner-game-btn:hover {
+  background: #ffedd5;
+}
+
+
+.delete-game-btn:hover {
+  background: #fee2e2;
+}
+
+
+/* =====================================================
+   WINNER FORM
+===================================================== */
+
+.winner-form {
+  margin-top: 15px;
+
+  padding: 15px;
+
+  background: #fffaf5;
+
+  border: 1px solid #f0e1d1;
+
+  border-radius: 11px;
+}
+
+
+.winner-form-title {
+  margin-bottom: 10px;
+
+  color: #8b4513;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.winner-form-fields {
+  display: grid;
+
+  grid-template-columns:
+    1fr 130px auto auto;
+
+  gap: 8px;
+}
+
+
+.winner-form-fields input,
+.winner-form-fields select {
+  height: 39px;
+
+  box-sizing: border-box;
+
+  padding: 0 10px;
+
+  border: 1px solid #ded2d2;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background: white;
+
+  color: #573737;
+
+  font-size: 12px;
+}
+
+
+.winner-form-fields input:focus,
+.winner-form-fields select:focus {
+  border-color: #991b1b;
+}
+
+
+.winner-form-fields button {
+  height: 39px;
+
+  padding: 0 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #991b1b;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.cancel-winner-btn {
+  background: white !important;
+
+  border: 1px solid #ded2d2 !important;
+
+  color: #765a5a !important;
+}
+
+
+/* =====================================================
+   WINNERS
+===================================================== */
+
+.manage-winners {
+  margin-top: 18px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #f0e6e2;
+}
+
+
+.manage-winners-title {
+  margin-bottom: 10px;
+
+  color: #8b4513;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.6px;
+}
+
+
+.manage-winner-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.manage-winner-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 9px 10px;
+
+  background: #fffaf5;
+
+  border: 1px solid #f0e1d1;
+
+  border-radius: 8px;
+}
+
+
+.manage-winner-medal {
+  font-size: 18px;
+}
+
+
+.manage-winner-info {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  flex: 1;
+
+  gap: 10px;
+}
+
+
+.manage-winner-info strong {
+  color: #4a1616;
+
+  font-size: 13px;
+}
+
+
+.manage-winner-info span {
+  padding: 3px 8px;
+
+  border-radius: 15px;
+
+  background: #f5e9db;
+
+  color: #8b4513;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.delete-winner-btn {
+  padding: 5px 9px;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 6px;
+
+  background: #fef2f2;
+
+  color: #b91c1c;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+.no-game-winners {
+  margin: 0;
+
+  color: #a38f8f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   ACCESS DENIED
+===================================================== */
+
+.manage-games-loading {
+  padding: 80px;
+
+  text-align: center;
+
+  color: #927070;
+}
+
+
+.games-unauthorized {
+  width: min(420px, calc(100% - 40px));
+
+  margin: 15vh auto;
+
+  padding: 40px;
+
+  background: white;
+
+  border: 1px solid #eadfda;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px
+    rgba(80, 40, 20, 0.07);
+}
+
+
+.games-unauthorized-icon {
+  width: 55px;
+  height: 55px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #fff1f2;
+
+  color: #be123c;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+
+  font-weight: 700;
+}
+
+
+.games-unauthorized h1 {
+  margin: 0 0 8px;
+
+  color: #4a1616;
+
+  font-size: 24px;
+}
+
+
+.games-unauthorized p {
+  margin: 0 0 20px;
+
+  color: #927070;
+
+  font-size: 13px;
+}
+
+
+.games-unauthorized button {
+  padding: 10px 17px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #991b1b;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .manage-games-header {
+    padding:
+      12px 18px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .manage-games-title {
+    width: 100%;
+
+    order: -1;
+  }
+
+
+  .games-role-badge {
+    margin-left: auto;
+  }
+
+
+  .manage-games-main {
+    padding:
+      30px 15px
+      50px;
+  }
+
+
+  .game-form-card {
+    padding:
+      22px 17px;
+  }
+
+
+  .game-form-columns {
+    grid-template-columns: 1fr;
+  }
+
+
+  .manage-game-buttons {
+    flex-wrap: wrap;
+  }
+
+
+  .edit-game-btn,
+  .winner-game-btn,
+  .delete-game-btn {
+    flex: 1;
+  }
+
+
+  .winner-form-fields {
+    grid-template-columns: 1fr;
+  }
+
+
+  .winner-form-fields button {
+    width: 100%;
+  }
+
+
+  .manage-winner-info {
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    gap: 3px;
+  }
+
+}
