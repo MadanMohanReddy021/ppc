@@ -49,7 +49,7 @@ function ManageGames() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/check_session.php",
+        "https://parvatiputra.ct.ws/check_session.php",
         {
           method: "GET",
           credentials: "include",
@@ -95,7 +95,7 @@ function ManageGames() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/get_games.php"
+        "https://parvatiputra.ct.ws/get_games.php"
       );
 
       const data =
@@ -187,8 +187,8 @@ function ManageGames() {
 
 
     const url = isEditing
-      ? "http://localhost/ppc/update_game.php"
-      : "http://localhost/ppc/add_game.php";
+      ? "https://parvatiputra.ct.ws/update_game.php"
+      : "https://parvatiputra.ct.ws/add_game.php";
 
 
     try {
@@ -331,7 +331,7 @@ function ManageGames() {
 
       const response =
         await fetch(
-          "http://localhost/ppc/delete_game.php",
+          "https://parvatiputra.ct.ws/delete_game.php",
           {
 
             method: "POST",
@@ -441,7 +441,7 @@ function ManageGames() {
 
       const response =
         await fetch(
-          "http://localhost/ppc/add_game_winner.php",
+          "https://parvatiputra.ct.ws/add_game_winner.php",
           {
 
             method: "POST",
@@ -538,7 +538,7 @@ function ManageGames() {
 
       const response =
         await fetch(
-          "http://localhost/ppc/delete_game_winner.php",
+          "https://parvatiputra.ct.ws/delete_game_winner.php",
           {
 
             method: "POST",

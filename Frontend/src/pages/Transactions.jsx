@@ -32,7 +32,7 @@ function Transactions() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/get_transactions.php",
+        "https://parvatiputra.ct.ws/get_transactions.php",
         {
           method: "GET",
           credentials: "include",

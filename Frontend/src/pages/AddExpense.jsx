@@ -281,7 +281,7 @@ function AddExpense() {
 
       const response =
         await fetch(
-          "http://localhost/ppc/add_expense.php",
+          "https://parvatiputra.ct.ws/add_expense.php",
           {
             method: "POST",
 

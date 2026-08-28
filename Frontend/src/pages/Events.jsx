@@ -25,7 +25,7 @@ function Events() {
   const checkSession = async () => {
     try {
       const response = await fetch(
-        "http://localhost/ppc/check_session.php",
+        "https://parvatiputra.ct.ws/check_session.php",
         {
           method: "GET",
           credentials: "include",
@@ -60,7 +60,7 @@ function Events() {
 
     try {
       const response = await fetch(
-        "http://localhost/ppc/get_events.php",
+        "https://parvatiputra.ct.ws/get_events.php",
         {
           method: "GET",
         }

@@ -18,7 +18,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost/ppc/login.php",
+        "https://parvatiputra.ct.ws/login.php",
         {
           method: "POST",
           credentials: "include",

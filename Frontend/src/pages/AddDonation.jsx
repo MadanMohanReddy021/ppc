@@ -359,7 +359,7 @@ const receiptRef = useRef(null);
 
       const response =
         await fetch(
-          "http://localhost/ppc/add_donation.php",
+          "https://parvatiputra.ct.ws/add_donation.php",
           {
             method: "POST",
 

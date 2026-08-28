@@ -41,7 +41,7 @@ function ManageEvents() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/check_session.php",
+        "https://parvatiputra.ct.ws/check_session.php",
         {
           method: "GET",
           credentials: "include",
@@ -88,7 +88,7 @@ function ManageEvents() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/get_events.php"
+        "https://parvatiputra.ct.ws/get_events.php"
       );
 
       const data =
@@ -178,8 +178,8 @@ function ManageEvents() {
 
 
     const url = isEditing
-      ? "http://localhost/ppc/update_event.php"
-      : "http://localhost/ppc/add_event.php";
+      ? "https://parvatiputra.ct.ws/update_event.php"
+      : "https://parvatiputra.ct.ws/add_event.php";
 
 
     try {
@@ -322,7 +322,7 @@ function ManageEvents() {
 
       const response =
         await fetch(
-          "http://localhost/ppc/delete_event.php",
+          "https://parvatiputra.ct.ws/delete_event.php",
           {
 
             method: "POST",

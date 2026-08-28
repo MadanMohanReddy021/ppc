@@ -26,7 +26,7 @@ function Games() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/check_session.php",
+        "https://parvatiputra.ct.ws/check_session.php",
         {
           method: "GET",
           credentials: "include",
@@ -67,7 +67,7 @@ function Games() {
     try {
 
       const response = await fetch(
-        "http://localhost/ppc/get_games.php"
+        "https://parvatiputra.ct.ws/get_games.php"
       );
 
       const data =

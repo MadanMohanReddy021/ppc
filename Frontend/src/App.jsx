@@ -33,7 +33,7 @@ function Home() {
       try {
 
         const response = await fetch(
-          "http://localhost/ppc/check_session.php",
+          "https://parvatiputra.ct.ws/check_session.php",
           {
             method: "GET",
             credentials: "include",
